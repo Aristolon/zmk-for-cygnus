@@ -352,10 +352,10 @@
 
         Layer_1 {
             bindings = <
-                &kp LA(Q)       &kp LA(W)           &td4            &kp LA(F)        &kp F12          &kp KP_NUMBER_7   &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_PLUS
-                &kp LA(A)       &kp LEFT_ARROW      &td5            &kp RIGHT_ARROW  &none            &kp KP_NUMBER_4   &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH  &kp KP_ASTERISK
-                &kp C_AL_CALC   &none               &kp LC(LA(C))   &none            &none            &kp KP_NUMBER_1   &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE    &kp BACKSPACE
-                                                    &trans          &trans           &trans           &kp KP_NUMBER_0   &mo 3            &kp KP_DOT
+                &kp LA(Q)       &kp LA(W)           &td4            &kp LA(F)        &kp F12          &kp KP_NUMBER_7   &kp KP_NUMBER_8     &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_PLUS
+                &kp LA(A)       &kp LEFT_ARROW      &td5            &kp RIGHT_ARROW  &none            &kp KP_NUMBER_4   &kp KP_NUMBER_5     &kp KP_NUMBER_6  &kp KP_SLASH  &kp KP_ASTERISK
+                &kp C_AL_CALC   &none               &kp LC(LA(C))   &none            &none            &kp KP_NUMBER_1   &kp KP_NUMBER_2     &kp KP_NUMBER_3  &kp DELETE    &kp BACKSPACE
+                                                    &trans          &trans           &trans           &kp ENTER         &qtl 3 KP_NUMBER_0  &kp KP_DOT
             >;
         };
 
@@ -382,7 +382,7 @@
                 &kp Q            &kp W  &td2                        &kp P   &td1            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS   &kp KP_PLUS
                 &kp A            &kp R  &kp S                       &kp T   &td0            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH   &kp KP_ASTERISK
                 &hm LEFT_SHIFT Z &kp X  &kp C                       &kp V   &td3      	    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE     &kp BACKSPACE
-                                        &qt LEFT_CONTROL ESCAPE     &mo 5   &kp SPACE       &kp KP_NUMBER_0  &kp ENTER        &kp KP_DOT
+                                        &qt LEFT_CONTROL ESCAPE     &mo 5   &kp SPACE       &kp ENTER        &kp KP_NUMBER_0  &kp KP_DOT
             >;
         };
 

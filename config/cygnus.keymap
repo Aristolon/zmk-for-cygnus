@@ -60,13 +60,26 @@
             bindings = 	<&kp DOWN_ARROW>, 
 			            <&kp PAGE_DOWN>;
         };
-        hm: homerow_mods {
+        hm_l: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods";
             #binding-cells = <2>;
-            tapping_term_ms = <170>;
-            quick-tap-ms = <0>;
+            tapping_term_ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
+            bindings =
+                <&kp>,
+                <&kp>;
+        };
+        hm_r: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "homerow mods";
+            #binding-cells = <2>;
+            tapping_term_ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            flavor = "balanced";
             bindings =
                 <&kp>,
                 <&kp>;
@@ -382,7 +395,7 @@
                 &kp Q            &kp W  &td2                        &kp P   &td1            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS   &kp KP_PLUS
                 &kp A            &kp R  &kp S                       &kp T   &td0            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH   &kp KP_ASTERISK
                 &hm LEFT_SHIFT Z &kp X  &kp C                       &kp V   &td3      	    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE     &kp BACKSPACE
-                                        &qt LEFT_CONTROL ESCAPE     &mo 5   &kp SPACE       &kp ENTER        &kp KP_NUMBER_0  &kp KP_DOT
+                                        &qt LEFT_CONTROL ESCAPE     &mo 5   &qtl 8 SPACE       &kp ENTER        &kp KP_NUMBER_0  &kp KP_DOT
             >;
         };
 
@@ -409,6 +422,15 @@
                 &kp NUMBER_1    &kp NUMBER_2     &trans         &kp NUMBER_3   &kp NUMBER_4           &kp F6  &kp F7  &none  &kp MINUS   &kp EQUAL
                 &kp NUMBER_5    &trans           &trans         &trans         &kp NUMBER_6           &none   &none   &none  &none       &none
                 &kp NUMBER_7    &kp NUMBER_8     &kp NUMBER_9   &kp NUMBER_0   &kp B                  &to 0   &none   &none  &none       &none
+                                                             &trans  &trans  &trans                       &none   &none   &none
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+                &none    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &none                        &kp F6  &kp F7  &none  &kp MINUS   &kp EQUAL
+                &none    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &none                        &none   &none   &none  &none       &none
+                &kp KP_NUMBER_0    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp KP_DOT         &to 0   &none   &none  &none       &none
                                                              &trans  &trans  &trans                       &none   &none   &none
             >;
         };

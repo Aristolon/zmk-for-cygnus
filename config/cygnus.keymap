@@ -356,10 +356,10 @@
 
         Default_layer {
             bindings = <
-                &kp Q    &kp W      &kp F                       &kp P   &kp G                &kp J        &kp L     &kp U                 &kp Y                  &kp BACKSPACE
-                &kp A    &kp R      &kp S                       &kp T   &kp D                &kp H        &kp N     &kp E                 &kp I                  &kp O
-                &kp Z    &kp X      &kp C                       &kp V   &hm LEFT_SHIFT B     &kp K        &kp M     &hm RIGHT_ALT COMMA   &hm RIGHT_CONTROL DOT  &hm RIGHT_SHIFT SLASH
-                                    &qt LEFT_CONTROL ESCAPE     &mo 1   &kp SPACE            &kp ENTER    &mo 2     &qt LEFT_GUI SEMI
+                &kp Q    &kp W      &kp F                       &kp P   &kp G                   &kp J        &kp L     &kp U                    &kp Y                       &kp BACKSPACE
+                &kp A    &kp R      &kp S                       &kp T   &kp D                   &kp H        &kp N     &kp E                    &kp I                       &kp O
+                &kp Z    &kp X      &kp C                       &kp V   &hm_l LEFT_SHIFT B      &kp K        &kp M     &hm_r RIGHT_ALT COMMA    &hm_r RIGHT_CONTROL DOT     &hm_r RIGHT_SHIFT SLASH
+                                    &qt LEFT_CONTROL ESCAPE     &mo 1   &kp SPACE               &kp ENTER    &mo 2     &qt LEFT_GUI SEMI
             >;
         };
 
@@ -392,10 +392,10 @@
 
         layer_4 {
             bindings = <
-                &kp Q            &kp W  &td2                        &kp P   &td1            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS   &kp KP_PLUS
-                &kp A            &kp R  &kp S                       &kp T   &td0            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH   &kp KP_ASTERISK
-                &hm LEFT_SHIFT Z &kp X  &kp C                       &kp V   &td3      	    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE     &kp BACKSPACE
-                                        &qt LEFT_CONTROL ESCAPE     &mo 5   &qtl 8 SPACE       &kp ENTER        &kp KP_NUMBER_0  &kp KP_DOT
+                &kp Q               &kp W  &td2                        &kp P   &td1             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS   &kp KP_PLUS
+                &kp A               &kp R  &kp S                       &kp T   &td0             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH   &kp KP_ASTERISK
+                &hm_l LEFT_SHIFT Z  &kp X  &kp C                       &kp V   &td3      	    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE     &kp BACKSPACE
+                                        &qt LEFT_CONTROL ESCAPE     &mo 5   &qtl 8 SPACE        &kp ENTER        &kp KP_NUMBER_0  &kp KP_DOT
             >;
         };
 
@@ -413,7 +413,7 @@
                 &kp TAB   &kp Q           &kp UP_ARROW    &kp E               &kp R                    &kp Y       &kp U            &kp I          &kp O    &kp P      
                 &kp A     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp F                    &kp H       &kp J            &kp K          &kp L    &kp SEMI
                 &kp Z     &kp X           &kp C           &kp V               &kp TILDE                &kp N       &kp M            &kp COMMA      &kp DOT  &kp SLASH
-                                 &hm LEFT_SHIFT ESCAPE     &mo 7         &kp SPACE                        &kp ENTER   &kp RIGHT_ALT    &kp BACKSPACE
+                                 &hm_l LEFT_SHIFT ESCAPE     &mo 7         &kp SPACE                        &kp ENTER   &kp RIGHT_ALT    &kp BACKSPACE
             >;
         };
 

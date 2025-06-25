@@ -64,8 +64,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods";
             #binding-cells = <2>;
-            tapping_term_ms = <280>;
-            quick-tap-ms = <175>;
+            tapping_term_ms = <170>;
+            quick-tap-ms = <0>;
             require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
             bindings =
@@ -76,8 +76,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods";
             #binding-cells = <2>;
-            tapping_term_ms = <280>;
-            quick-tap-ms = <175>;
+            tapping_term_ms = <200>;
+            quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
             flavor = "balanced";
             bindings =
